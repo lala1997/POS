@@ -1,15 +1,17 @@
 package Herlin;
 
-public class clase {
-    private Double cuentaDolares;
+import Banco.Cuenta;
+import lombok.Data;
 
+@Data
+public class clase {
     public clase(){
-        cuentaDolares=0.0;
+
     }
 
-    public Double retirar(Double monto) {
-        if (monto >= cuentaDolares) {
-            cuentaDolares = cuentaDolares - monto;
+    public Double retirar(Cuenta cuenta,Double monto) {
+        if (monto <= cuenta.getMonto()) {
+            cuenta.setMonto( cuenta.getMonto() - monto);
             return monto;
         } else {
             return null;
