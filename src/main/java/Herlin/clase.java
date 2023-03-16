@@ -1,6 +1,6 @@
-package Herlin;
+package src.main.java.Herlin;
 
-import Banco.Cuenta;
+import src.main.java.Banco.Cuenta;
 import lombok.Data;
 
 @Data

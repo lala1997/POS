@@ -1,4 +1,4 @@
-package Banco;
+package src.main.java.Banco;
 
 import lombok.Data;
 

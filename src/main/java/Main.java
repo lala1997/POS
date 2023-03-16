@@ -1,7 +1,9 @@
-import Ariel.creditoDollar;
-import Banco.Banco;
-import Banco.Cuenta;
-import Herlin.clase;
+package src.main.java;
+
+import src.main.java.Banco.Banco;
+import src.main.java.Banco.Cuenta;
+import src.main.java.Herlin.clase;
+
 
 import java.util.List;
 import java.util.Scanner;
@@ -10,11 +12,6 @@ import java.util.stream.Collectors;
 public class Main {
     private static Banco banco = new Banco();
     private static clase debitoDolares = new clase();
-    private static creditoDollar creditoDollar = new creditoDollar();
-
-
-       
-
 
     public static void main(String[] args) {
         String nombre="Roberto";

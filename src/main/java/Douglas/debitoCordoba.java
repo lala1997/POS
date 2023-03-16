@@ -1,4 +1,4 @@
-package Douglas;
+package src.main.java.Douglas;
 
 public class debitoCordoba {
 
@@ -14,7 +14,7 @@ public class debitoCordoba {
     }
     public double efectuarDebitoCorboda(final Double lado){
       if ((saldo - monto) < 0) {
-          return 0
+          return 0;
       } else {
           return saldo - monto;
       }
