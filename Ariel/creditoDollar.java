@@ -19,7 +19,7 @@ public class creditoDollar {
 
                     System.out.println("Digite la cantidad que desea ingresar en cuenta: ");
                     ingreso=entrada.nextDouble();
-                    saldoActual=saldo_inicial+ingreso;
+                    saldoActual=saldo_inicial-ingreso;
                     System.out.println("El saldo Actual es: " + saldoActual);
 
             }
