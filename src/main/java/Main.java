@@ -13,7 +13,13 @@ public class Main {
     private static creditoDollar creditoDollar = new creditoDollar();
 
 
+       
+
+
     public static void main(String[] args) {
+        String nombre="Roberto";
+        System.out.println(nombre);
+        
         Scanner scanner = new Scanner(System.in);
         int choice = 0;
         double monto = 0.0;
