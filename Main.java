@@ -17,6 +17,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int choice = 0;
         double monto = 0.0;
+        Double saldoActual=0.0;
         do {
             System.out.println("Digite su numero de cuenta:");
             final int numero = scanner.nextInt();
@@ -39,11 +40,13 @@ public class Main {
                                 case 2:
                                     System.out.println("Ingrese el monto que desea acreditar: ");
                                     monto = scanner.nextDouble();
-//                                    if (creditoDollar.acreditar(cuenta, monto) != null) {
-//                                        System.out.println("Transaccion aprovada!!!");
-//                                    } else {
-//                                        System.out.println("Ocurrio un error al depositar");
-//                                    }
+                                    //saldoActual=creditoDollar.acreditar(cuenta, monto);
+                                    if (saldoActual != null) {
+                                        System.out.println("Transaccion aprovada!!!");
+                                        System.out.println("Su nuevo saldo es: " + (choice==1?"C$ ":"$ ")+saldoActual);
+                                    } else {
+                                        System.out.println("Ocurrio un error al depositar");
+                                    }
                                     break;
                             }
                             break;
@@ -59,8 +62,10 @@ public class Main {
                                 case 2:
                                     System.out.println("Ingrese el monto que desea retirar: ");
                                     monto = scanner.nextDouble();
-                                    if (debitoDolares.retirar(cuenta, monto) != null) {
+                                    saldoActual=debitoDolares.retirar(cuenta, monto);
+                                    if ( saldoActual != null) {
                                         System.out.println("Transaccion aprovada!!!");
+                                        System.out.println("Su nuevo saldo es: " + (choice==1?"C$ ":"$ ")+saldoActual);
                                     } else {
                                         System.out.println("Saldo insufice!!!");
                                     }

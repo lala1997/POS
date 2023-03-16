@@ -12,7 +12,7 @@ public class clase {
     public Double retirar(Cuenta cuenta,Double monto) {
         if (monto <= cuenta.getMonto()) {
             cuenta.setMonto( cuenta.getMonto() - monto);
-            return monto;
+            return cuenta.getMonto();
         } else {
             return null;
         }
