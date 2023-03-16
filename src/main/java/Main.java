@@ -12,6 +12,10 @@ import java.util.stream.Collectors;
 public class Main {
     private static Banco banco = new Banco();
     private static clase debitoDolares = new clase();
+<<<<<<< HEAD:src/main/java/Main.java
+=======
+    private static creditoDollar creditoDollar = new creditoDollar();
+>>>>>>> 6e4ebe28118962e1d9f0c01259dd0653b2a435d0:Main.java
 
     public static void main(String[] args) {
         String nombre="Roberto";
@@ -90,6 +94,8 @@ public class Main {
             }
         } while (choice != 0);
         scanner.close();
+
     }
-}
+     }
+
 
